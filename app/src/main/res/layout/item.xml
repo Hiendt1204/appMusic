@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/img_iconNhac"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+       android:background="@drawable/icon_song"
+        />
+    <TextView
+        android:id="@+id/tv_Song"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_toRightOf="@+id/img_iconNhac"
+        android:text="tenbaihat"/>
+    <TextView
+        android:id="@+id/tv_Artists"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_toRightOf="@+id/img_iconNhac"
+        android:layout_below="@+id/tv_Song"
+        android:text="tencasy"/>
+
+</RelativeLayout>

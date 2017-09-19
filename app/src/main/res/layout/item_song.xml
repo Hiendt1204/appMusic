@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <ImageView
+            android:id="@+id/imv_Background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/play" />
+
+        <TextView
+            android:id="@+id/tv_Song"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Duong Thu Hien"
+            android:textColor="@color/textcolor"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_Artists"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_Song"
+            android:layout_centerHorizontal="true"
+            android:text="Duong Thu Hien"
+            android:textColor="@color/textcolor"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imv_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_skip_next_black_24dp" />
+
+        <ImageView
+            android:id="@+id/imv_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_skip_previous_black_24dp" />
+
+        <TextView
+            android:id="@+id/tv_Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="00:00"
+            android:textColor="@color/textcolor"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/imv_shuffle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_Time"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_shuffle" />
+
+        <ImageView
+            android:id="@+id/imv_repeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_Time"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/imv_shuffle"
+            android:background="@drawable/bg_repeat" />
+        <ImageView
+            android:id="@+id/imv_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_play"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_Songs"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"></ListView>
+
+</LinearLayout>
