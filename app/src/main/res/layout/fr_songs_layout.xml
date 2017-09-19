@@ -4,11 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="20sp"
-        android:text="444"/>
+
     <ListView
         android:id="@+id/lv_Songs"
         android:layout_width="match_parent"
